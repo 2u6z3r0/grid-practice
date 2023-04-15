@@ -1,2 +1,2 @@
 # grid-practice
-a simple page to practice html grid 
+a simple page created to practice html grid 
