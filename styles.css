@@ -5,6 +5,10 @@
 }
 
 .testimonial-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
   padding-block: 2rem;
   width: min(95%, 100rem);
   margin-inline: auto;
@@ -12,8 +16,30 @@
 
 .testimonial {
   padding: 20px;
-  margin: 20px;
-  border: 1px solid gray;
-  border-radius: 10px;
+  box-shadow: 5px 5px 15px 0px gray;
+  border-radius: .5rem;
   font-size: large;
+  background-color: azure;
+}
+
+.testimonial:nth-child(3) {
+
+  grid-column: span 2;
+}
+
+.testimonial:nth-child(2){
+  background-color: rgb(6, 29, 62);
+  grid-column-start: 4;
+  grid-row: 1 / 4;
+  color: white;
+}
+
+.testimonial:nth-child(4) {
+  background-color: rgba(0, 0, 255, 0.494);
+  grid-row: 2/4;
+}
+
+.testimonial:nth-child(5){
+  background-color: rgba(128, 128, 128, 0.592);
+  grid-column: span 2;
 }
